@@ -1,5 +1,5 @@
 {
-    "name": "package-json-validator",
+    "name": "package-json-validator-with-gooder-semver",
     "version": "0.6.2",
     "description": "Tools to validate package.json files",
     "author": {
@@ -41,6 +41,7 @@
     },
     "devDependencies": {
         "grunt": "~0.4.1",
+        "grunt-cli": "~0.4.1",
         "grunt-contrib-jshint": "~0",
         "grunt-contrib-qunit": "~0"
     },

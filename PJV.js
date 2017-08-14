@@ -1,3 +1,5 @@
+var semver = require('semver');
+
 (function(exports) {
 
     /* Parse the incoming string as JSON, validate it against the spec for package.json
@@ -228,14 +230,7 @@
     };
 
     PJV.isValidVersionRange = function (v) {
-        // https://github.com/isaacs/npm/blob/master/doc/cli/json.md#dependencies
-        return  (/^[\^<>=~]{0,2}[0-9.x]+/).test(v) ||
-                PJV.urlFormat.test(v) ||
-                v == "*" ||
-                v === "" ||
-                v === "latest" ||
-                (v.indexOf && v.indexOf("git") === 0) ||
-                false;
+        return semver.valid(v);
     };
 
     // Allows for a url as a string, or an object that looks like:
