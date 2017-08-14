@@ -45,11 +45,12 @@
     "email": "nick@sullivanflock.com"
   },
   "dependencies": {
-    "optimist": "~0.6.0"
+    "optimist": "~0.6.0",
+    "semver": "^5.4.1"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-cli": "~0.4.1",
+    "grunt-cli": "^1.2.0",
     "grunt-contrib-jshint": "~0",
     "grunt-contrib-qunit": "~0"
   },
