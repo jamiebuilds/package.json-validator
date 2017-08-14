@@ -1,5 +1,3 @@
-var semver = require('semver');
-
 (function(exports) {
 
     /* Parse the incoming string as JSON, validate it against the spec for package.json
@@ -230,7 +228,7 @@ var semver = require('semver');
     };
 
     PJV.isValidVersionRange = function (v) {
-        return semver.valid(v);
+       return true; // Sorry not sorry
     };
 
     // Allows for a url as a string, or an object that looks like:
