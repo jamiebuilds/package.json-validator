@@ -1,6 +1,6 @@
 {
   "name": "package-json-validator-with-gooder-semver",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Tools to validate package.json files",
   "author": {
     "name": "Nick Sullivan",
